@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 
 class CurrencyConverterMaterialPage extends StatelessWidget {
+  const CurrencyConverterMaterialPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +10,7 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
         body: Center(
           child: Column(
             children: [
-              Text("Hello World!!!"),
+              Text("Hello World!!!, Today is Good..."),
             ],
           )
         ),
