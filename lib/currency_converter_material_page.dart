@@ -30,7 +30,15 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
                   ),
                   prefixIcon: Icon(Icons.monetization_on),
                   prefixIconColor: Colors.white60,
+                  filled: true,
+                  fillColor: Colors.white,
                 ),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    width: 2.0,
+                    style: BorderStyle.solid,
+                  )
+                ) ,
               )
             ],
           )
