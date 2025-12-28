@@ -9,8 +9,9 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
     return Scaffold(
         body: Center(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("Hello World!!!, Today is Good..."),
+              Text("0"),
             ],
           )
         ),
