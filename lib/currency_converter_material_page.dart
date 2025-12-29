@@ -14,7 +14,7 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
         ),
       );
     return Scaffold(
-      backgroundColor: Color.fromRGBO(0, 0, 0, 1),
+      backgroundColor: Color.fromRGBO(76, 0, 255, 1),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -30,15 +30,15 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: TextField(
                   style: TextStyle(
-                  color: const Color.fromARGB(255, 0, 0, 0),
+                  color: const Color.fromARGB(255, 0, 98, 255),
                   ),
                   decoration: InputDecoration(
                     hintText: "Please Enter athe Amount in USD",
                     hintStyle: TextStyle(
-                      color: const Color.fromARGB(153, 0, 0, 0),
+                      color: const Color.fromARGB(255, 0, 98, 255),
                     ),
                     prefixIcon: Icon(Icons.monetization_on),
-                    prefixIconColor: const Color.fromARGB(153, 0, 0, 0),
+                    prefixIconColor: const Color.fromARGB(255, 0, 98, 255),
                     filled: true,
                     fillColor: Colors.white,
                     focusedBorder: border,
@@ -55,8 +55,8 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
                 }
               },
               style: TextButton.styleFrom(
-                backgroundColor: Colors.black,
-                foregroundColor: Colors.black,
+                backgroundColor: const Color.fromARGB(255, 0, 98, 255),
+                foregroundColor: const Color.fromARGB(255, 0, 98, 255),
                 minimumSize: Size(double.infinity, 50),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(5),
