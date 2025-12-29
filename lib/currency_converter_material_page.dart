@@ -6,6 +6,12 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final border = OutlineInputBorder(
+      borderSide: BorderSide(
+        width: 2.0,
+        style: BorderStyle.solid,
+        ),
+      );
     return Scaffold(
       backgroundColor: Color.fromRGBO(0, 0, 0, 1),
         body: Center(
@@ -32,18 +38,8 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
                   prefixIconColor: const Color.fromARGB(153, 0, 0, 0),
                   filled: true,
                   fillColor: Colors.white,
-                  focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(
-                    width: 2.0,
-                    style: BorderStyle.solid,
-                  )
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(
-                    width: 2.0,
-                    style: BorderStyle.solid,
-                  )
-                ),
+                  focusedBorder: border,
+                enabledBorder: border,
                 ),
                 keyboardType: TextInputType.numberWithOptions(
                   decimal: true,
