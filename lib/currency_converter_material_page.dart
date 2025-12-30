@@ -55,20 +55,23 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
                   ),
                 ),
               ),
-              TextButton(onPressed: () {
-                if (kDebugMode) {
-                  print("Button Clicked");
-                }
-              },
-              style: TextButton.styleFrom(
-                backgroundColor: const Color.fromARGB(255, 0, 98, 255),
-                foregroundColor: const Color.fromARGB(255, 0, 98, 255),
-                minimumSize: Size(double.infinity, 50),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(5),
-                )
-              ),
-              child: Text("Click Me"),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextButton(onPressed: () {
+                  if (kDebugMode) {
+                    print("Button Clicked");
+                  }
+                },
+                style: TextButton.styleFrom(
+                  backgroundColor: const Color.fromARGB(255, 0, 98, 255),
+                  foregroundColor: const Color.fromARGB(255, 0, 98, 255),
+                  minimumSize: Size(double.infinity, 50),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(5),
+                  )
+                ),
+                child: Text("Click Me"),
+                ),
               ),
             ],
           )
