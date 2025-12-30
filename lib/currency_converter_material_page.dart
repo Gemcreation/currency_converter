@@ -10,6 +10,7 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
     final border = OutlineInputBorder(
       borderSide: BorderSide(
         width: 2.0,
+        color: Color.fromARGB(255, 255, 255, 255),
         style: BorderStyle.solid,
         ),
       );
@@ -18,7 +19,12 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Color.fromRGBO(76, 0, 255, 1),
         elevation: 1,
-        title: Text("Currency Converter"),
+        title: Text(
+          "Currency Converter",
+          style: TextStyle(
+            color: Color.fromARGB(255, 255, 255, 255),
+          ),
+          ),
         centerTitle: true,
       ),
         body: Center(
@@ -29,7 +35,7 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
               style: TextStyle(
                 fontSize: 45,
                 fontWeight: FontWeight.bold,
-                color: Color.fromARGB(255, 235, 235, 235),
+                color: Color.fromARGB(255, 235, 255, 255),
                 ),
               ),
               Padding(
