@@ -47,7 +47,7 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
                   decoration: InputDecoration(
                     hintText: "Please Enter athe Amount in USD",
                     hintStyle: TextStyle(
-                      color: const Color.fromARGB(255, 255, 255, 255),
+                      color: const Color.fromARGB(255, 0, 98, 255),
                     ),
                     prefixIcon: Icon(Icons.monetization_on),
                     prefixIconColor: const Color.fromARGB(255, 0, 98, 255),
@@ -70,7 +70,7 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
                 },
                 style: TextButton.styleFrom(
                   backgroundColor: const Color.fromARGB(255, 0, 98, 255),
-                  foregroundColor: const Color.fromARGB(255, 0, 98, 255),
+                  foregroundColor: const Color.fromARGB(255, 255, 255, 255),
                   minimumSize: Size(double.infinity, 50),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(5),
