@@ -1,9 +1,19 @@
 
-import 'package:flutter/foundation.dart';
+
 import 'package:flutter/material.dart';
 
-class CurrencyConverterMaterialPage extends StatelessWidget {
-  const CurrencyConverterMaterialPage({super.key});
+class CurrencyConverterMaterialPage extends StatefulWidget{
+  State createState() => _CurrencyConverterMaterialPageState();
+}
+class _CurrencyConverterMaterialPageState extends State{
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold();
+  }
+}
+
+class CurrencyConverterMaterialPagee extends StatelessWidget {
+  const CurrencyConverterMaterialPagee({super.key});
 
   @override
   Widget build(BuildContext context) {
