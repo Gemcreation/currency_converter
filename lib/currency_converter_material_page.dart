@@ -7,7 +7,7 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    int result = 0;
+    double result = 0;
     final TextEditingController textEditingController = TextEditingController();
     final border = OutlineInputBorder(
       borderSide: BorderSide(
@@ -33,7 +33,8 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("0",
+              Text(
+                result.toString(),
               style: TextStyle(
                 fontSize: 45,
                 fontWeight: FontWeight.bold,
@@ -68,9 +69,7 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: ElevatedButton(
                   onPressed: () {
-                  if (kDebugMode) {
-                    print("Button Clicked");
-                  }
+                    result = double.parse(textEditingController.text)* 81;
                 },
                 style: TextButton.styleFrom(
                   backgroundColor: const Color.fromARGB(255, 0, 98, 255),
