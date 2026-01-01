@@ -18,13 +18,6 @@ class _CurrencyConverterCupertinoPageState extends State<CurrencyConverterCupert
     }
   @override
   Widget build(BuildContext context) {
-    final border = OutlineInputBorder(
-      borderSide: BorderSide(
-        width: 2.0,
-        color: Color.fromARGB(255, 255, 255, 255),
-        style: BorderStyle.solid,
-      ),
-    );
     return CupertinoPageScaffold(
       backgroundColor: Color.fromRGBO(76, 0, 255, 1),
       navigationBar: const CupertinoNavigationBar(
@@ -73,16 +66,6 @@ class _CurrencyConverterCupertinoPageState extends State<CurrencyConverterCupert
                   onPressed: convert,
                   color: CupertinoColors.activeBlue,
                   child: const Text("Convert"),
-                },
-                style: TextButton.styleFrom(
-                  backgroundColor: const Color.fromARGB(255, 0, 98, 255),
-                  foregroundColor: const Color.fromARGB(255, 255, 255, 255),
-                  minimumSize: Size(double.infinity, 50),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(5),
-                  )
-                ),
-                child: Text("Click Me"),
                 ),
               ),
             ],
