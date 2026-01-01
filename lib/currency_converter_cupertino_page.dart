@@ -8,6 +8,14 @@ class CurrencyConverterCupertinoPage extends StatefulWidget {
 }
 
 class _CurrencyConverterCupertinoPageState extends State<CurrencyConverterCupertinoPage> {
+  double result = 0;
+    final TextEditingController textEditingController = TextEditingController();
+    void convert() {
+      result = double.parse(textEditingController.text)* 1400;
+      setState(() {
+        
+      });
+    }
   @override
   Widget build(BuildContext context) {
     final border = OutlineInputBorder(
