@@ -25,20 +25,18 @@ class _CurrencyConverterCupertinoPageState extends State<CurrencyConverterCupert
         style: BorderStyle.solid,
       ),
     );
-    return Scaffold(
+    return CupertinoPageScaffold(
       backgroundColor: Color.fromRGBO(76, 0, 255, 1),
-      appBar: AppBar(
+      navigationBar: const CupertinoNavigationBar(
         backgroundColor: Color.fromRGBO(76, 0, 255, 1),
-        elevation: 1,
-        title: Text(
+        middle: Text(
           "Currency Converter",
           style: TextStyle(
             color: Color.fromARGB(255, 255, 255, 255),
           ),
         ),
-        centerTitle: true,
       ),
-        body: Center(
+        child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -52,23 +50,18 @@ class _CurrencyConverterCupertinoPageState extends State<CurrencyConverterCupert
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: TextField(
+                child: CupertinoTextField(
                   controller: textEditingController,
                   style: TextStyle(
                   color: const Color.fromARGB(255, 0, 98, 255),
                   ),
-                  decoration: InputDecoration(
-                    hintText: "Please Enter athe Amount in USD",
-                    hintStyle: TextStyle(
-                      color: const Color.fromARGB(255, 0, 98, 255),
-                    ),
-                    prefixIcon: Icon(Icons.monetization_on),
-                    prefixIconColor: const Color.fromARGB(255, 0, 98, 255),
-                    filled: true,
-                    fillColor: Colors.white,
-                    focusedBorder: border,
-                    enabledBorder: border,
+                  decoration: BoxDecoration(
+                    color: CupertinoColors.activeBlue,
+                    border: Border.all(),
+                    borderRadius: BorderRadius.circular(5),
                   ),
+                  placeholder: "Please Enter athe Amount in USD",
+                  prefix: const Icon(CupertinoIcons.money_dollar),
                   keyboardType: TextInputType.numberWithOptions(
                     decimal: true,
                   ),
@@ -76,12 +69,10 @@ class _CurrencyConverterCupertinoPageState extends State<CurrencyConverterCupert
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: ElevatedButton(
-                  onPressed: () {
-                    setState(() {
-                      result = double.parse(textEditingController.text)* 1400;
-                    }
-                  );
+                child: CupertinoButton(
+                  onPressed: convert,
+                  color: CupertinoColors.activeBlue,
+                  child: const Text("Convert"),
                 },
                 style: TextButton.styleFrom(
                   backgroundColor: const Color.fromARGB(255, 0, 98, 255),
