@@ -19,9 +19,9 @@ class _CurrencyConverterCupertinoPageState extends State<CurrencyConverterCupert
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
-      backgroundColor: Color.fromRGBO(76, 0, 255, 1),
+      backgroundColor: Color.fromRGBO(203, 1, 132, 1),
       navigationBar: const CupertinoNavigationBar(
-        backgroundColor: Color.fromRGBO(76, 0, 255, 1),
+        backgroundColor: Color.fromRGBO(246, 140, 209, 1),
         middle: Text(
           "Currency Converter",
           style: TextStyle(
@@ -46,10 +46,10 @@ class _CurrencyConverterCupertinoPageState extends State<CurrencyConverterCupert
                 child: CupertinoTextField(
                   controller: textEditingController,
                   style: TextStyle(
-                  color: const Color.fromARGB(255, 0, 98, 255),
+                  color: const Color.fromARGB(255, 255, 0, 140),
                   ),
                   decoration: BoxDecoration(
-                    color: CupertinoColors.activeBlue,
+                    color: const Color.fromARGB(255, 251, 249, 250),
                     border: Border.all(),
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -64,7 +64,7 @@ class _CurrencyConverterCupertinoPageState extends State<CurrencyConverterCupert
                 padding: const EdgeInsets.all(8.0),
                 child: CupertinoButton(
                   onPressed: convert,
-                  color: CupertinoColors.activeBlue,
+                  color: const Color.fromARGB(255, 255, 255, 255),
                   child: const Text("Convert"),
                 ),
               ),
